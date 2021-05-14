@@ -10,14 +10,14 @@ const App = (): JSX.Element => {
   return (
     <Router>
       <nav>
-        <Link to="/1"></Link>
-        <Link to="/1/2"></Link>
-        <Link to="/users/2">n</Link>
+        <Link to="/"> 1 </Link>
+        <Link to="/1/2">1/2</Link>
+        <Link to="/users/2">users/2</Link>
       </nav>
       <Switch>
-        <Route exact path="/1" component={HomeComponent} />
-        <Route path="/1/2" component={UsersComponent} />
-        <Route path="/users/2" component={UsersComponent} />
+        <Route exact path="/" component={UsersComponent} />
+        <Route path="/1/2" component={HomeComponent} />
+        <Route path="/users/2" component={HomeComponent} />
       </Switch>
     </Router>
   );
